@@ -1,0 +1,213 @@
+{
+  "PresetView" : {
+    "frame" : {
+      "y" : "0",
+      "x" : "0",
+      "width" : "screen_width",
+      "height" : "screen_height",
+      "userInteractionEnabled" : "NO"
+    },
+    "order" : [
+      "Music_Player"
+    ],
+    "type" : "UIView",
+    "children" : {
+      "Music_Player" : {
+        "boxShadow" : {
+          "y" : "3",
+          "color" : "rgba(0,0,0,0)",
+          "x" : "0",
+          "radius" : "3"
+        },
+        "frame" : {
+          "y" : "622",
+          "x" : "16",
+          "width" : "395",
+          "height" : "145"
+        },
+        "hideWhenPlaying" : "NO",
+        "borderWidth" : "0",
+        "backgroundColor" : "rgba(255,255,255,0.3)",
+        "showWhenPlaying" : "NO",
+        "children" : {
+          "Album_Art_Container" : {
+            "boxShadow" : {
+              "y" : "3",
+              "color" : "rgba(0,0,0,0)",
+              "x" : "0",
+              "radius" : "3"
+            },
+            "frame" : {
+              "y" : "12",
+              "x" : "12",
+              "width" : "122",
+              "height" : "122"
+            },
+            "hideWhenPlaying" : "NO",
+            "borderWidth" : "0",
+            "backgroundColor" : "rgba(255,255,255,0.3)",
+            "showWhenPlaying" : "NO",
+            "children" : {
+              "Album_Art" : {
+                "pauseImage" : "none",
+                "frame" : {
+                  "y" : "0",
+                  "x" : "0",
+                  "width" : "122",
+                  "height" : "122"
+                },
+                "isAlbumArt" : "yes",
+                "contentMode" : "scaleAspectFit",
+                "animation" : "none",
+                "cornerRadius" : "0",
+                "imageURL" : "noartwork.png",
+                "type" : "UIImageView",
+                "actions" : "openPlayingMusic",
+                "imageFolder" : "none"
+              }
+            },
+            "blurAlpha" : "0",
+            "cornerRadius" : "20",
+            "type" : "UIView",
+            "childorder" : "Album_Art",
+            "rotate" : "0",
+            "blurIntensity" : "10",
+            "alpha" : "1",
+            "scale" : "0",
+            "gradientImage" : "none",
+            "borderColor" : "rgba(255,255,255,0)",
+            "userInteraction" : "YES",
+            "actions" : "openPlayingMusic",
+            "animation" : "none",
+            "blurColor" : "dark"
+          },
+          "Backward" : {
+            "pauseImage" : "none",
+            "frame" : {
+              "y" : "86",
+              "x" : "161",
+              "width" : "29",
+              "height" : "29"
+            },
+            "isAlbumArt" : "0",
+            "contentMode" : "scaleAspectFit",
+            "animation" : "none",
+            "cornerRadius" : "0",
+            "imageURL" : "backward.fill@3x.png",
+            "type" : "UIImageView",
+            "actions" : "prevTrack",
+            "imageFolder" : "none"
+          },
+          "Artist" : {
+            "borderColor" : "rgba(255,255,255,1)",
+            "textStyle" : "uppercase",
+            "animationSpeed" : "20",
+            "textAlignment" : "NSTextAlignmentCenter",
+            "frame" : {
+              "y" : "36",
+              "x" : "144",
+              "width" : "242",
+              "height" : "40"
+            },
+            "kerning" : "0",
+            "backgroundColor" : "rgba(255,255,255,0)",
+            "textColor" : "rgba(255, 255, 255, 1.00)",
+            "type" : "MarqueeLabel",
+            "fadeEdgesAmount" : "20",
+            "numberOfLines" : "1",
+            "data" : "[musicArtist]",
+            "borderWidth" : "0",
+            "gradientImage" : "none",
+            "fontSize" : "20",
+            "fontName" : "Helvetica-Bold",
+            "textShadow" : {
+              "y" : "3",
+              "radius" : "3",
+              "x" : "0",
+              "color" : "rgba(0,0,0,0)"
+            },
+            "animationDelay" : "5"
+          },
+          "Play\/Pause" : {
+            "pauseImage" : "pause.fill@3x.png",
+            "frame" : {
+              "y" : "86",
+              "x" : "251",
+              "width" : "29",
+              "height" : "29"
+            },
+            "isAlbumArt" : "0",
+            "contentMode" : "scaleAspectFit",
+            "animation" : "none",
+            "cornerRadius" : "0",
+            "imageURL" : "play.fill@3x.png",
+            "type" : "UIImageView",
+            "actions" : "playMusic",
+            "imageFolder" : "none"
+          },
+          "Title" : {
+            "borderColor" : "rgba(255,255,255,1)",
+            "textStyle" : "uppercase",
+            "animationSpeed" : "20",
+            "textAlignment" : "NSTextAlignmentCenter",
+            "frame" : {
+              "y" : "15",
+              "x" : "144",
+              "width" : "242",
+              "height" : "40"
+            },
+            "kerning" : "0",
+            "backgroundColor" : "rgba(255,255,255,0)",
+            "textColor" : "rgba(255, 255, 255, 1.00)",
+            "type" : "MarqueeLabel",
+            "fadeEdgesAmount" : "20",
+            "numberOfLines" : "1",
+            "data" : "[musicTitle]",
+            "borderWidth" : "0",
+            "gradientImage" : "none",
+            "fontSize" : "20",
+            "fontName" : "Helvetica-Bold",
+            "textShadow" : {
+              "y" : "3",
+              "radius" : "3",
+              "x" : "0",
+              "color" : "rgba(0,0,0,0)"
+            },
+            "animationDelay" : "5"
+          },
+          "Forward" : {
+            "pauseImage" : "none",
+            "frame" : {
+              "y" : "86",
+              "x" : "340",
+              "width" : "29",
+              "height" : "29"
+            },
+            "isAlbumArt" : "0",
+            "contentMode" : "scaleAspectFit",
+            "animation" : "none",
+            "cornerRadius" : "0",
+            "imageURL" : "forward.fill@3x.png",
+            "type" : "UIImageView",
+            "actions" : "nextTrack",
+            "imageFolder" : "none"
+          }
+        },
+        "blurAlpha" : "1",
+        "cornerRadius" : "27",
+        "type" : "UIView",
+        "childorder" : "Album_Art_Container,Title,Artist,Play\/Pause,Forward,Backward",
+        "rotate" : "0",
+        "blurIntensity" : "15",
+        "alpha" : "1",
+        "scale" : "0",
+        "gradientImage" : "none",
+        "borderColor" : "rgba(255,255,255,0)",
+        "userInteraction" : "YES",
+        "actions" : "none",
+        "animation" : "none",
+        "blurColor" : "dark"
+      }
+    }
+  }
+}
