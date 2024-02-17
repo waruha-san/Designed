@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Colorful Dots</title>
+	<style>
+		@font-face {
+			font-family: 'Gusto';
+			src: url('Gusto-W00-Solid.ttf');
+		}
+
+		@font-face {
+			font-family: 'Odin';
+			src: url('Odin-Rounded-Regular.otf');
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 140px;
+		   width: 140px;
+         overflow: hidden;
+		}
+
+		#hours, #minutes {
+			font: 70px 'Gusto';
+			color: #2d323f;
+			line-height: 0.9;
+			letter-spacing: 5px;
+			-webkit-text-stroke: 3px #A0F8DE;
+		}
+	</style>
+</head>
+
+<body onload="init()">
+	<main>
+		<div id="hours"></div>
+		<div id="minutes"></div>
+	</main>
+
+	<script>
+		function updateTime() {
+			const now = new Date();
+			const hours = String(now.getHours() % 12 || 12).padStart(2, '0');
+			const minutes = String(now.getMinutes()).padStart(2, '0');
+			document.getElementById('hours').textContent = hours;
+			document.getElementById('minutes').textContent = minutes;
+		}
+
+		function init() {
+			updateTime();
+			setInterval(updateTime, 1000);
+		}
+
+	</script>
+</body>
+
+</html>
